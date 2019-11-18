@@ -30,8 +30,8 @@ const MainContainer = () => {
 const StyledContainer = styled.div`
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
   z-index: -1;
 `;
 

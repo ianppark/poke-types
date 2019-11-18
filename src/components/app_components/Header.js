@@ -26,7 +26,7 @@ const StyledHeader = styled.div`
   align-items: center;
   justify-content: center;
   grid-area: header;
-  min-height: 50px;
+  height: 100%;
   z-index: 10;
 `;
 

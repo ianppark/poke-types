@@ -4,6 +4,7 @@ import GlobalStyle from './GlobalStyle';
 import Header from './components/app_components/Header';
 import MainContainer from './components/app_components/MainContainer';
 import PokeTypeState from './context/poketypes/PokeTypesState';
+import TypeInfo from './components/app_components/TypeInfo';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AppGrid>
         <Header />
         <MainContainer />
+        <TypeInfo />
         <GlobalStyle />
       </AppGrid>
     </PokeTypeState>
@@ -20,11 +22,9 @@ function App() {
 const AppGrid = styled.div`
   display: grid;
   grid-gap: 0;
-  grid-template-rows: 1fr 8fr 1fr;
   grid-template-areas:
     'header'
-    'main'
-    'footer';
+    'main';
   height: 100vh;
 `;
 export default App;
